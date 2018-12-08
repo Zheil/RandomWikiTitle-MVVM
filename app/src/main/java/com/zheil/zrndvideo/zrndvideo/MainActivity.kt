@@ -1,12 +1,15 @@
 package com.zheil.zrndvideo.zrndvideo
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+import com.zheil.zrndvideo.zrndvideo.base.presentation.BaseActivity
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity: BaseActivity() {
+    override fun setLayoutActivity(): Int = R.layout.activity_main
+
+    override fun setContainer(): Int = R.id.container
+
+    override fun onCreateChild() {
+        setupFragment(MainFragment())
     }
+
 }
