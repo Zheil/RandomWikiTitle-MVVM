@@ -1,5 +1,6 @@
-package com.zheil.zrndvideo.zrndvideo
+package com.zheil.zrndvideo.zrndvideo.presentation.list
 
+import com.zheil.zrndvideo.zrndvideo.R
 import com.zheil.zrndvideo.zrndvideo.base.presentation.BaseFragment
 
 
