@@ -1,4 +1,4 @@
-package com.zheil.zrndvideo.zrndvideo.base.presentation
+package com.zheil.rnd.wikititle.base.presentation
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

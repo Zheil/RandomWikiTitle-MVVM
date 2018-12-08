@@ -1,7 +1,7 @@
-package com.zheil.zrndvideo.zrndvideo.presentation.list
+package com.zheil.rnd.wikititle.presentation.list
 
-import com.zheil.zrndvideo.zrndvideo.data.response.WikiResponce
-import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
+import com.zheil.rnd.wikititle.data.response.WikiResponce
+import com.zheil.rnd.wikititle.data.uimodel.UITitleData
 
 
 class ListMapper {

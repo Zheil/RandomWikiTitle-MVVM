@@ -1,4 +1,4 @@
-package com.zheil.zrndvideo.zrndvideo.data.response
+package com.zheil.rnd.wikititle.data.response
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

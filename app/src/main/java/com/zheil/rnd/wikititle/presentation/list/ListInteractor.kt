@@ -1,10 +1,9 @@
-package com.zheil.zrndvideo.zrndvideo.presentation.list
+package com.zheil.rnd.wikititle.presentation.list
 
 import android.content.Context
 import android.util.Log
-import android.widget.Toast
-import com.zheil.zrndvideo.zrndvideo.data.api.ApiService
-import com.zheil.zrndvideo.zrndvideo.data.response.WikiResponce
+import com.zheil.rnd.wikititle.data.api.ApiService
+import com.zheil.rnd.wikititle.data.response.WikiResponce
 
 
 class ListInteractor(private val mContext: Context) {

@@ -1,13 +1,13 @@
-package com.zheil.zrndvideo.zrndvideo.presentation.list
+package com.zheil.rnd.wikititle.presentation.list
 
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.zheil.zrndvideo.zrndvideo.R
-import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
-import com.zheil.zrndvideo.zrndvideo.databinding.ItemDataBinding
+import com.zheil.rnd.wikititle.R
+import com.zheil.rnd.wikititle.data.uimodel.UITitleData
+import com.zheil.rnd.wikititle.databinding.ItemDataBinding
 
 
 class ListAdapter(private var listData: List<UITitleData>): RecyclerView.Adapter<ListViewHolder>() {

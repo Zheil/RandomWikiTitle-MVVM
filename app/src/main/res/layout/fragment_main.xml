@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewFragment"
-            type="com.zheil.zrndvideo.zrndvideo.presentation.list.ListViewModel"/>
+            type="com.zheil.rnd.wikititle.presentation.list.ListViewModel"/>
     </data>
 
 <LinearLayout

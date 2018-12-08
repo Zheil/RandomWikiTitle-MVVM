@@ -1,4 +1,4 @@
-package com.zheil.zrndvideo.zrndvideo.data.api
+package com.zheil.rnd.wikititle.data.api
 
 import android.content.Context
 import com.android.volley.Request
@@ -6,8 +6,8 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
-import com.zheil.zrndvideo.zrndvideo.Const
-import com.zheil.zrndvideo.zrndvideo.data.response.WikiResponce
+import com.zheil.rnd.wikititle.Const
+import com.zheil.rnd.wikititle.data.response.WikiResponce
 
 
 class ApiService(private val mContext: Context) {

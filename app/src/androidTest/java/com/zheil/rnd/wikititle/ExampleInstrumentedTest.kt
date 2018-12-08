@@ -1,4 +1,4 @@
-package com.zheil.zrndvideo.zrndvideo
+package com.zheil.rnd.wikititle
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

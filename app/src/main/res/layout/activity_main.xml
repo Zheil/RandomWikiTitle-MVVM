@@ -5,7 +5,7 @@
 
   <variable
       name="mainView"
-      type="com.zheil.zrndvideo.zrndvideo.presentation.main.MainViewModel"
+      type="com.zheil.rnd.wikititle.presentation.main.MainViewModel"
       />
 
   </data>

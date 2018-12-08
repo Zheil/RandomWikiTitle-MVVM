@@ -1,7 +1,7 @@
-package com.zheil.zrndvideo.zrndvideo.presentation.main
+package com.zheil.rnd.wikititle.presentation.main
 
 import android.arch.lifecycle.ViewModel
-import com.zheil.zrndvideo.zrndvideo.logd
+import com.zheil.rnd.wikititle.logd
 
 
 class MainViewModel: ViewModel() {

@@ -1,4 +1,4 @@
-package com.zheil.zrndvideo.zrndvideo.base.presentation
+package com.zheil.rnd.wikititle.base.presentation
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.zheil.zrndvideo.zrndvideo.databinding.FragmentMainBinding
-import com.zheil.zrndvideo.zrndvideo.presentation.list.ListViewModel
+import com.zheil.rnd.wikititle.databinding.FragmentMainBinding
+import com.zheil.rnd.wikititle.presentation.list.ListViewModel
 
 
 abstract class BaseFragment: Fragment() {

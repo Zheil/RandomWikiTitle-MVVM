@@ -1,10 +1,10 @@
-package com.zheil.zrndvideo.zrndvideo.presentation.list
+package com.zheil.rnd.wikititle.presentation.list
 
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MediatorLiveData
-import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
+import com.zheil.rnd.wikititle.data.uimodel.UITitleData
 
 
 class ListViewModel(app: Application): AndroidViewModel(app) {

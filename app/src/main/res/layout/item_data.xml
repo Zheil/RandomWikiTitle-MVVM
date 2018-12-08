@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData"/>
+            type="com.zheil.rnd.wikititle.data.uimodel.UITitleData"/>
     </data>
 
 <LinearLayout

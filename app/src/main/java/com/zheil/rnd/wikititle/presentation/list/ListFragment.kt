@@ -1,14 +1,14 @@
-package com.zheil.zrndvideo.zrndvideo.presentation.list
+package com.zheil.rnd.wikititle.presentation.list
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
-import com.zheil.zrndvideo.zrndvideo.R
-import com.zheil.zrndvideo.zrndvideo.base.presentation.BaseFragment
-import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
-import com.zheil.zrndvideo.zrndvideo.databinding.FragmentMainBinding
+import com.zheil.rnd.wikititle.R
+import com.zheil.rnd.wikititle.base.presentation.BaseFragment
+import com.zheil.rnd.wikititle.data.uimodel.UITitleData
+import com.zheil.rnd.wikititle.databinding.FragmentMainBinding
 import kotlinx.android.synthetic.main.fragment_main.*
 
 

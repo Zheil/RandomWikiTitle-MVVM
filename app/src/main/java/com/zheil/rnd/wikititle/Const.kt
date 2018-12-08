@@ -1,4 +1,4 @@
-package com.zheil.zrndvideo.zrndvideo
+package com.zheil.rnd.wikititle
 
 
 object Const {
