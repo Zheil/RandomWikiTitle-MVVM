@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.zheil.zrndvideo.zrndvideo.R
 import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
 import com.zheil.zrndvideo.zrndvideo.databinding.ItemDataBinding
-import com.zheil.zrndvideo.zrndvideo.model.Model
 
 
 class ListAdapter(private val listData: List<UITitleData>): RecyclerView.Adapter<ListViewHolder>() {
@@ -20,8 +19,7 @@ class ListAdapter(private val listData: List<UITitleData>): RecyclerView.Adapter
     override fun getItemCount(): Int = listData.size
 
     override fun onBindViewHolder(bind: ListViewHolder, index: Int) {
-        val model = Model(listData[index].title)
-        bind.mBinding.viewModel = model
+        bind.mBinding.viewModel = listData[index]
     }
 }
 
