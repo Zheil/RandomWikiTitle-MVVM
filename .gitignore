@@ -9,3 +9,4 @@
 app/libs/
 app/src/androidTest/
 app/src/test/
+output.json
