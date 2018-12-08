@@ -1,11 +1,13 @@
 package com.zheil.zrndvideo.zrndvideo.presentation.list
 
+import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.zheil.zrndvideo.zrndvideo.R
-import kotlinx.android.synthetic.main.item_data.view.*
+import com.zheil.zrndvideo.zrndvideo.databinding.ItemDataBinding
+import com.zheil.zrndvideo.zrndvideo.model.Model
 
 
 class ListAdapter(private val listData: List<String>): RecyclerView.Adapter<ListViewHolder>() {
@@ -17,12 +19,12 @@ class ListAdapter(private val listData: List<String>): RecyclerView.Adapter<List
     override fun getItemCount(): Int = listData.size
 
     override fun onBindViewHolder(bind: ListViewHolder, index: Int) {
-        bind.text.text = listData[index]
+        val model = Model(listData[index])
+        bind.mBinding.viewModel = model
     }
-
 }
 
 
 class ListViewHolder(view: View): RecyclerView.ViewHolder(view) {
-    val text = view.textData
+    val mBinding: ItemDataBinding = DataBindingUtil.bind(view)!!
 }
