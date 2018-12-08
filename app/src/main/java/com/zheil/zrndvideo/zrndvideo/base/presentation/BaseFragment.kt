@@ -15,14 +15,12 @@ abstract class BaseFragment: Fragment() {
 
     abstract fun setLayoutFragment(): Int
     abstract fun setViewModel():  Class<ListViewModel>
-    open fun onCreateViewChild() {}
+    open fun onCreateViewChild(binding: FragmentMainBinding) {}
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding: FragmentMainBinding = DataBindingUtil.inflate(inflater, setLayoutFragment(), container, false)
-        val myView = ViewModelProviders.of(this).get(setViewModel())
-        binding.viewFragment = myView
+        onCreateViewChild(binding)
         binding.setLifecycleOwner(this)
-        onCreateViewChild()
         return binding.root
     }
 }
