@@ -3,10 +3,8 @@ package com.zheil.zrndvideo.zrndvideo.presentation.list
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.util.Log
-import com.zheil.zrndvideo.zrndvideo.data.api.ApiService
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MediatorLiveData
-import com.zheil.zrndvideo.zrndvideo.data.response.WikiResponce
 import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
 
 

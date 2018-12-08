@@ -46,10 +46,9 @@ class ListFragment: BaseFragment() {
         myRecycle.adapter = ListAdapter(listOf())
     }
 
+
     private fun initObserve() {
         mModelViewModel.getDataObserved().observe(this, Observer<List<UITitleData>> {
-            t -> Log.d("MYLOG", "OBSERVER = ${t!!.toString()}") }
-
-        )
+            responseUiList -> myRecycle.adapter = ListAdapter(responseUiList!!) })
     }
 }
