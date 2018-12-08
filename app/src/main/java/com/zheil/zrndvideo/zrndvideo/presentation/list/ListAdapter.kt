@@ -28,7 +28,6 @@ class ListAdapter(private var listData: List<UITitleData>): RecyclerView.Adapter
     }
 }
 
-
 class ListViewHolder(view: View): RecyclerView.ViewHolder(view) {
     val mBinding: ItemDataBinding = DataBindingUtil.bind(view)!!
 }

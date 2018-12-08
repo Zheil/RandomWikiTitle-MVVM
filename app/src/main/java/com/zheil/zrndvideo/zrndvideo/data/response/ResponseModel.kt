@@ -3,9 +3,6 @@ package com.zheil.zrndvideo.zrndvideo.data.response
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class ResponseModel {
-}
-
 data class Continue (
     @SerializedName("rncontinue") var rncontinue: String,
     @SerializedName("continue") var queryContinue: String )

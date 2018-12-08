@@ -1,11 +1,11 @@
 package com.zheil.zrndvideo.zrndvideo.presentation.main
 
 import android.arch.lifecycle.ViewModel
-import android.util.Log
+import com.zheil.zrndvideo.zrndvideo.logd
 
 
 class MainViewModel: ViewModel() {
     fun onClick() {
-        Log.d("MYLOG", "CLICKED!")
+        logd("MYLOG", "CLICKED!")
     }
 }
