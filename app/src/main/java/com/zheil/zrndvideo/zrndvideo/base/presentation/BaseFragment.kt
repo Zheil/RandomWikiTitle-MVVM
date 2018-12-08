@@ -1,6 +1,5 @@
 package com.zheil.zrndvideo.zrndvideo.base.presentation
 
-import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v4.app.Fragment

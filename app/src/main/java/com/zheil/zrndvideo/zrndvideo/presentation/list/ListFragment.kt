@@ -1,5 +1,6 @@
 package com.zheil.zrndvideo.zrndvideo.presentation.list
 
+import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -29,6 +30,7 @@ class ListFragment: BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initView()
+        initObserve()
 
         startRequest()
     }
@@ -40,5 +42,11 @@ class ListFragment: BaseFragment() {
     private fun initView() {
         myRecycle.layoutManager = LinearLayoutManager(context)
         myRecycle.adapter = ListAdapter(listOf())
+    }
+
+    private fun initObserve() {
+        mModelViewModel.getDataObserved().observe(this, Observer<List<String>> {
+            t -> Log.d("MYLOG", "OBSERVER = ${t!!.toString()}") }
+        )
     }
 }
