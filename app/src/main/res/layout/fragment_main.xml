@@ -5,30 +5,25 @@
         <variable
             name="viewFragment"
             type="com.zheil.zrndvideo.zrndvideo.presentation.list.ListViewModel"/>
-
     </data>
-
-
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <Button
-        android:onClick="@{() -> viewFragment.onClickFrg()}"
-        android:text="TEST"
+        android:onClick="@{() -> viewFragment.onClickBtn()}"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text"
+      />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/myRecycle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
 

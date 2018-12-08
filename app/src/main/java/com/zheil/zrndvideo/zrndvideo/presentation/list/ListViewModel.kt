@@ -2,7 +2,6 @@ package com.zheil.zrndvideo.zrndvideo.presentation.list
 
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
-import android.util.Log
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MediatorLiveData
 import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
@@ -18,10 +17,9 @@ class ListViewModel(app: Application): AndroidViewModel(app) {
         return mDataObserved
     }
 
-    fun onClickFrg() {
-        Log.d("MYLOG", "CLICKED ON FRAGMENT!")
+    fun onClickBtn() {
+        requestToServer()
     }
-
 
     fun requestToServer() {
         mInteractor.getData {

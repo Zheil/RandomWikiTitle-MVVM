@@ -1,7 +1,6 @@
 package com.zheil.zrndvideo.zrndvideo.data.api
 
 import android.content.Context
-import android.util.Log
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
@@ -18,15 +17,13 @@ class ApiService(private val mContext: Context) {
     fun getWiki(
             onSuccess: (response: WikiResponce) -> Unit,
             onFail: (error: String) -> Unit) {
-        val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, Const.enpoint, null,
+        val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, Const.endpoint, null,
                 Response.Listener { response ->
                     val gson = Gson().fromJson(response.toString(), WikiResponce::class.java)
                     onSuccess(gson)
-                    //Log.d("MYLOG", "OK! ${response.toString()}")
                 },
                 Response.ErrorListener { error ->
                     onFail(error.toString())
-                    //Log.d("MYLOG", "ERROR ${error.toString()}" )
                 }
         )
         mApi.add(jsonObjectRequest)

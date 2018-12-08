@@ -4,11 +4,9 @@ import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.util.Log
 import android.view.View
 import com.zheil.zrndvideo.zrndvideo.R
 import com.zheil.zrndvideo.zrndvideo.base.presentation.BaseFragment
-import com.zheil.zrndvideo.zrndvideo.data.response.WikiResponce
 import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
 import com.zheil.zrndvideo.zrndvideo.databinding.FragmentMainBinding
 import kotlinx.android.synthetic.main.fragment_main.*
@@ -45,7 +43,6 @@ class ListFragment: BaseFragment() {
         myRecycle.layoutManager = LinearLayoutManager(context)
         myRecycle.adapter = ListAdapter(listOf())
     }
-
 
     private fun initObserve() {
         mModelViewModel.getDataObserved().observe(this, Observer<List<UITitleData>> {
