@@ -15,18 +15,20 @@ class ApiService(private val mContext: Context) {
 
     private val mApi = Volley.newRequestQueue(mContext)
 
-    fun getWiki() {
+    fun getWiki(
+            onSuccess: (response: WikiResponce) -> Unit,
+            onFail: (error: String) -> Unit) {
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, Const.enpoint, null,
                 Response.Listener { response ->
                     val gson = Gson().fromJson(response.toString(), WikiResponce::class.java)
-                    Log.d("MYLOG", "OK! ${response.toString()}")
+                    onSuccess(gson)
+                    //Log.d("MYLOG", "OK! ${response.toString()}")
                 },
                 Response.ErrorListener { error ->
-                    Log.d("MYLOG", "ERROR ${error.toString()}" )
+                    onFail(error.toString())
+                    //Log.d("MYLOG", "ERROR ${error.toString()}" )
                 }
         )
-
         mApi.add(jsonObjectRequest)
-
     }
 }

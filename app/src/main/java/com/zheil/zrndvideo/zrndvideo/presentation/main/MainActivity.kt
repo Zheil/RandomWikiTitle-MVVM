@@ -17,8 +17,6 @@ class MainActivity: BaseActivity() {
     override fun onCreateChild() {
         initDataBinding()
         setupFragment(ListFragment())
-
-        ApiService(this).getWiki()
     }
 
     private fun initDataBinding() {
@@ -26,6 +24,5 @@ class MainActivity: BaseActivity() {
         val myView = ViewModelProviders.of(this).get(MainViewModel::class.java)
         binding.mainView = myView
         binding.setLifecycleOwner(this)
-
     }
 }

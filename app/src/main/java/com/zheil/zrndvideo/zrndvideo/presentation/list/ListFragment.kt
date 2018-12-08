@@ -8,6 +8,8 @@ import android.util.Log
 import android.view.View
 import com.zheil.zrndvideo.zrndvideo.R
 import com.zheil.zrndvideo.zrndvideo.base.presentation.BaseFragment
+import com.zheil.zrndvideo.zrndvideo.data.response.WikiResponce
+import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
 import com.zheil.zrndvideo.zrndvideo.databinding.FragmentMainBinding
 import kotlinx.android.synthetic.main.fragment_main.*
 
@@ -45,8 +47,9 @@ class ListFragment: BaseFragment() {
     }
 
     private fun initObserve() {
-        mModelViewModel.getDataObserved().observe(this, Observer<List<String>> {
+        mModelViewModel.getDataObserved().observe(this, Observer<List<UITitleData>> {
             t -> Log.d("MYLOG", "OBSERVER = ${t!!.toString()}") }
+
         )
     }
 }
