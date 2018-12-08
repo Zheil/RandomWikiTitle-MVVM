@@ -14,11 +14,11 @@ import kotlinx.android.synthetic.main.fragment_main.*
 
 class ListFragment: BaseFragment() {
     private lateinit var mModelViewModel: ListViewModel
+    private val mAdapter = ListAdapter(listOf())
 
     override fun setViewModel(): Class<ListViewModel> = ListViewModel::class.java
 
     override fun setLayoutFragment(): Int = R.layout.fragment_main
-
 
     override fun onCreateViewChild(binding: FragmentMainBinding) {
         val modelView = ViewModelProviders.of(this).get(ListViewModel::class.java)
@@ -41,11 +41,12 @@ class ListFragment: BaseFragment() {
 
     private fun initView() {
         myRecycle.layoutManager = LinearLayoutManager(context)
-        myRecycle.adapter = ListAdapter(listOf())
+        myRecycle.adapter = mAdapter
     }
 
     private fun initObserve() {
         mModelViewModel.getDataObserved().observe(this, Observer<List<UITitleData>> {
-            responseUiList -> myRecycle.adapter = ListAdapter(responseUiList!!) })
+            responseUiList -> mAdapter.updateList(responseUiList!!)
+        })
     }
 }

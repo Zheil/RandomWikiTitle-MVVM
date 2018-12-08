@@ -10,7 +10,7 @@ import com.zheil.zrndvideo.zrndvideo.data.uimodel.UITitleData
 import com.zheil.zrndvideo.zrndvideo.databinding.ItemDataBinding
 
 
-class ListAdapter(private val listData: List<UITitleData>): RecyclerView.Adapter<ListViewHolder>() {
+class ListAdapter(private var listData: List<UITitleData>): RecyclerView.Adapter<ListViewHolder>() {
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ListViewHolder {
       val view = LayoutInflater.from(p0.context).inflate(R.layout.item_data, p0, false)
         return ListViewHolder(view)
@@ -20,6 +20,11 @@ class ListAdapter(private val listData: List<UITitleData>): RecyclerView.Adapter
 
     override fun onBindViewHolder(bind: ListViewHolder, index: Int) {
         bind.mBinding.viewModel = listData[index]
+    }
+
+    fun updateList(newList: List<UITitleData>) {
+        listData = newList
+        notifyDataSetChanged()
     }
 }
 

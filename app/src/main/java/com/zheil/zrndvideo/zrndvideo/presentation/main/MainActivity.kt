@@ -1,6 +1,5 @@
 package com.zheil.zrndvideo.zrndvideo.presentation.main
 
-
 import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
 import com.zheil.zrndvideo.zrndvideo.presentation.list.ListFragment
